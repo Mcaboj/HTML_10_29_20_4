@@ -1,0 +1,37 @@
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+div:hover {
+  background: grey;
+}
+
+.one {
+  background: red;
+  transform: translateX(50%);
+  transform: scaleX(0.5);
+  transform: skewX(5deg);
+}
+
+.two {
+  background: green;
+  transform: translateX(30px);
+  transform: scaleY(0.5);
+  transform: rotateZ(45deg);
+}
+
+.three {
+  background: blue;
+  border-radius: 10%;
+  /* transform: translate(75px, 300px);
+  transform: scale(0.5, 0.5);
+  transform: rotateX(80deg); */
+  /* transition-property: background, border-radius, scale;
+  transition-duration: 0.5s, 0.1s, 1s; */
+  transition: background 1s, border-radius 1s;
+}
+.three:hover {
+  border-radius: 30%;
+  transform: scale(1.1);
+}
